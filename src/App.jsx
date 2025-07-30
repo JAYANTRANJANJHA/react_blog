@@ -1,11 +1,12 @@
-function App() {
+import { useState  } from "react"
 
-  
-  return (
+function App(){
+const[name,setName]=useState("Jayant")
 
-    <>
+    return(
 
-    </>
-  )
+    )
 }
-export default App;
+
+
+export default App
