@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.header {
+    padding: 10px;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header ul {
+    margin: auto;
+    justify-content: space-around;
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.header ul li{
+    padding: 10px;
+}
+
+.header .link img{
+    margin: 0;
+    height: 40px;
+    
+
+}
+
+.header .link{
+    text-decoration: none;
+    
+}
