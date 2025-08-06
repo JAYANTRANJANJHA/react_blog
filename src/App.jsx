@@ -1,10 +1,15 @@
-export default function App(){
 
+import './App.css'
 
-    return(
+export default function App() {
 
-        <>
+return (
+    <>
         
-        </>
-    )
+    </>
+
+)
 }
+
+
+
