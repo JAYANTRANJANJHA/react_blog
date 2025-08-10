@@ -1,42 +1,26 @@
-import { Suspense } from "react";
+export default function App(){
 
-const fetchData = () => fetch('https://dummyjson.com/users').then((response) => response.json());
-console.log(fetchData());
-const userResource = fetchData();
-
-export default function App() {
-
-    return (
+    return(
         <>
-            <h1>use API in React js</h1>
-            <Suspense fallback={<p>Loading....</p>}>
-                <Users userResource={userResource} />
-            </Suspense>
+        <h1>Color Mixer</h1>
 
+<div style={{backgroundColor:rgb(0,0,0) ,height:200, width:200}}>d</div>
 
+        <label htmlFor="">Red</label>
+        <input type="range" onChange={(evt)=>console.log(evt.target.value)} min={0} max={255} />
+        <br /><br />
+        <label htmlFor="">Green</label>
+        <input type="range" min={0} max={255} />
+        <br /><br />
+        <label htmlFor="">Blue</label>
+        <input type="range" min={0} max={255} />
+
+        
+        
         </>
 
-    )
-}
-
-const Users = ({userResource}) => {
-    
-    const userData=use(userResource);
-    console.log(userData.users);
-    
-
-    return (
-        <>
-         <h1>Users List</h1>
-        {
-            userData?.users?.map((user)=>(
-                <h1>{user.firstName}</h1>
-            ))
-        }
-
-        </>
-       
 
     )
+
 }
 
